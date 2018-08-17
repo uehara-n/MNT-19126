@@ -1,0 +1,709 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*---------------------------------------------------reset
+*/
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    background: transparent;
+	font-weight:normal;
+}
+html {
+    overflow: auto;
+}
+
+body {
+    line-height: 1;
+/*   overflow: hidden;*/
+	color: #4b4b4b;
+}
+
+a {
+	color: #77ae00;
+}
+
+a:hover{
+	color: #5e8702;
+}
+
+/*ol,*/ ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:hover img.img_over {
+		border:none !important;
+		opacity: 0.6 !important;
+		filter: Alpha(Opacity=60) !important;
+}
+
+.border1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cacaca;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	margin-bottom: 50px;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+.sp{
+	display: none;
+}
+/*body*/
+body {
+	font-size: 14px;
+	font-family: "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+}
+
+
+.c_left {
+	clear: left;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+}
+
+/*head*/
+
+#head {
+	height: 90px;
+	position: relative;
+	top: 0px;
+	width: 960px;
+	z-index: 20;
+	margin-right: auto;
+	margin-left: auto;
+	/* [disabled]margin-bottom: 100px; */
+}
+
+#head h1 {
+	position: absolute;
+	top: 3px;
+}
+
+#head h2 {
+	/* [disabled]color: #000; */
+	padding-top: 5px;
+	width: 600px;
+	float: left;
+}
+
+#head #head_contact {
+	position: absolute;
+	top: 25px;
+	right: 0px;
+}
+
+/*gnav*/
+
+#gnav {
+	height: 62px;
+	width: 100%;
+	z-index: 100;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #32a440;
+	float: left;
+	background-color: #fff;
+}
+
+#gnav .globalnavi {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	z-index: 100;
+	/*position: relative;*/
+
+}
+#gnav .globalnavi li{
+	float: left;
+	z-index: 100;
+}
+#gnav .globalnavi ul{
+	display:none;
+	padding:0;
+	background:#fff;
+	list-style-type:none;
+	position:absolute;
+	z-index:1002;
+	border-bottom:1px solid #32A440;
+	border-left:2px solid #32A440;
+	margin: 0;
+	width: 175px;
+}
+#gnav .globalnavi ul li:first-child{
+	border-top:2px solid #32A440;
+}
+#gnav .globalnavi ul li{
+	float:none;
+	border-right:2px solid #32A440;
+	border-bottom:1px solid #32A440;
+	margin:0;
+	padding:0;
+}
+#gnav .globalnavi ul a{
+	text-align: left;
+	display:block;
+	min-width:151px;
+	white-space:nowrap;
+	padding:15px 5px 15px 15px;
+	color:#333;
+	text-decoration:none;
+	background: url(../images/gnav/arrow.gif) no-repeat 5px 50%;
+}
+#gnav .globalnavi ul a:hover{
+	background-color:#e2f2e4;
+}
+
+#gnav .globalnavi .contact {
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+
+
+#main {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	/*position: relative;*/
+}
+
+/*contents*/
+#contents {
+	margin-right:50px;
+	float: right;
+	width: 690px;
+}
+
+
+
+/*フッター*/
+
+#foot {
+	clear:both;
+	padding: 20px 0;
+	background-color: #faf9f5;
+	border-bottom: solid #32a440 7px;
+	/*height: 250px;*/
+}
+#foot .inner {
+	width:960px;
+	margin:0 auto 0 auto;
+}
+
+#foot .inner .com_info {
+	float: left;
+	width: 260px;
+}
+
+#foot .inner .com_info .logo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cfcfcf;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+#foot .inner .com_info .com_txt {
+	line-height: 1.5em;
+}
+
+#foot .inner .com_info .com_txt dt {
+	margin-left: -6px;
+}
+
+#foot .inner .com_info .com_txt dd {
+	margin-bottom: 5px;
+}
+
+#foot .inner #foot_menu {
+	float: right;
+	width: 670px;
+}
+
+#foot .inner #foot_menu li {
+	float: left;
+	width: 165px;
+	font-size: 14px;
+	line-height:1.5em;
+}
+#foot .inner #foot_menu li a {
+	color: #323232;
+	text-decoration: none;
+}
+#foot .inner #foot_menu li ul li {
+	font-size: 12px;
+	padding-left: 15px;
+	background-image: url(../images/foot/foot_arrow.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/*side*/
+#side {
+	float: left;
+	width: 200px;
+}
+
+#side .sbnr_area {
+	width: 200px;
+}
+
+#side .sbnr_area img {
+	margin-bottom: 10px;
+}
+
+#side .sbnr_area a {
+	display:block;
+}
+#side .s_menu {
+	margin-bottom: 10px;
+	background-color: #faf9f5;
+}
+
+#side .s_menu .tit {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+}
+
+#side .s_menu ul li a {
+	display: block;
+	padding: 10px 0 10px 30px;
+	color: #323232;
+	background-image: url(../images/side/s_arrow.png);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	font-size: 14px;
+	text-decoration: none;
+}
+#side .s_menu ul li a:hover {
+	background-color: #EFD6A1;
+}
+
+#side .s_box {
+	margin-bottom: 10px;
+	background-color: #faf9f5;
+	padding-bottom: 10px;
+}
+
+#side .s_box .tit {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+}
+
+/*サイドイベント*/
+#s_event .pic {
+	width: 180px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+
+#side #s_event .txt {
+	width: 180px;
+	margin-right: auto;
+	margin-left: auto;
+	/* [disabled]padding-bottom: 15px; */
+	line-height: 1.5em;
+}
+#s_event .txt a {
+	color: #333;
+	text-decoration: none;
+}
+/*サイドチラシ*/
+#side #leaf .pic {
+	width: 180px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#main #side #area .map {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#side #area .shosai {
+	width: 169px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	line-height: 1.5em;
+}
+
+#side #area .shosai .stit {
+	color: #FFF;
+	background-color: #c0c0c0;
+	display: block;
+	width: 30px;
+	margin-bottom: 0px;
+	text-align: center;
+	line-height: 1px;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+}
+
+#side #area .cap {
+	color: #c20000;
+	width: 169px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 1.5em;
+}
+
+
+/*回遊バナー*/
+.kaiyu {
+	margin-bottom: 25px;
+}
+
+.contact {
+	margin-bottom: 25px;
+}
+.fixed {
+  position: fixed;
+  top: 0px;
+}
+
+#go_sodan {
+	display: block;
+	width: 57px;
+	top: 100px;
+	right: 0px;
+	position: fixed;
+	z-index: 9999;
+}
+#go_campaign {
+    display: block;
+    width: 71px;
+    top: 400px;
+    right: 0px;
+    position: fixed;
+    z-index: 9998;
+}
+#go_campaign a:hover {
+	border:none ;
+	opacity: 0.7 ;
+	filter: Alpha(Opacity=70) ;
+}
+
+
+/*パンくず*/
+#pankuzu{
+	list-style-type:none;
+	margin:20px 0;
+	padding:0;
+}
+#pankuzu li{
+	display:inline;
+}
+#pankuzu a{
+	color:#F60;
+}
+#pankuzu a:hover{
+	color:#F90;
+	text-decoration:none;
+}
+
+/*ページナビ*/
+
+.customer_navi,.customer_navi_c{
+	border:1px solid #CCC;
+	padding:10px;
+	background-color:#eee;
+	clear:left;
+	overflow:hidden;
+}
+.customer_navi p{
+	margin:0;
+}
+.customer_navi{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.customer_navi_c{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.customer_navi_left{
+	dislpay:inline-block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.customer_navi_right{
+	dislpay:inline-block;
+	float:right;
+	margin:0;
+	padding:0;
+}
+.customer_navi .pages{
+	display:inlline-block;
+	padding:5px;
+	margin:0;
+}
+.customer_navi .current{
+	display:inlline-block;
+	padding:3px 5px;
+	margin:0 2px;
+	border:1px solid #333;
+	background-color:#fff;
+}
+
+.page_back_btn01,.page_back_btn02,.page_back_btn01 p,.page_back_btn02 p{
+	display:inline;
+}
+.page_back_btn02 a,.page_back_btn01 a{
+	display:inline-block;
+	border:1px solid #CCC;
+	padding:5px;
+	color: #F60;
+}
+.page_back_btn02 a:hover,.page_back_btn01 a:hover{
+	background-color:#333;
+	color:#fff;
+}
+/*タイトル*/
+#main_tit,.main_tit {
+	font-size: 26px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #32A440;
+	text-align: left;
+	padding-bottom: 5px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/* gnav_修正 */
+
+
+#gnav .globalnavi ul .nolink {
+  display: block;
+  min-width: 102px;
+  width: auto;
+  padding: 10px 10px 10px 20px;
+  color: #333;
+  text-decoration: none;
+  background: url(http://www.oliver-reform.jp/wp-content/themes/reform/images/common/arraw_gn.gif) no-repeat 10px 14px;
+}
+#gnav .globalnavi ul .nolink_b {
+  display: block;
+  min-width: 102px;
+  width: auto;
+  padding: 10px 10px 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight:bold;
+  background: url(http://www.oliver-reform.jp/wp-content/themes/reform/images/common/arraw_gn.gif) no-repeat 10px 14px;
+}
+#gnav .globalnavi ul li.indent{
+	float:none;
+	border-left: none;
+	margin:0 0 0 10px;
+}
+
+#gnav .globalnavi ul a{
+	display:block;
+	min-width:102px;
+	width:auto;
+	padding:10px 10px 10px 20px;
+	color:#333;
+	text-decoration:none;
+	background:url(http://www.oliver-reform.jp/wp-content/themes/reform/images/common/arraw_gn.gif) no-repeat 10px 14px;
+}
+#gnav .globalnavi ul a:hover{
+	background-color:#eee;
+}
+
+#gnav .globalnavi ul .nolink {
+  display: block;
+  min-width: 102px;
+  width: auto;
+  padding: 10px 10px 10px 20px;
+  color: #333;
+  text-decoration: none;
+  background: url(http://www.oliver-reform.jp/wp-content/themes/reform/images/common/arraw_gn.gif) no-repeat 10px 14px;
+}
+#gnav .globalnavi ul .nolink_b {
+  display: block;
+  min-width: 102px;
+  width: auto;
+  padding: 10px 10px 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight:bold;
+  background: url(http://www.oliver-reform.jp/wp-content/themes/reform/images/common/arraw_gn.gif) no-repeat 10px 14px;
+}
+
+
+/* チラシ */
+.chirashi_box_left {
+	width:290px;
+	margin:0 20px 20px 0;
+	padding:20px;
+	text-align:center;
+	border:1px solid #ccc;
+	float:left;
+}
+
+.chirashi_box_right {
+	width:290px;
+	margin:0 0 20px 0;
+	padding:20px;
+	text-align:center;
+	border:1px solid #ccc;
+	float:left;
+}
+
+.chirashi_pdf_btn {
+	width:313px;
+	height:40px;
+	margin:10px auto 0 auto;
+}
+.tit1 {
+    font-size: 22px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #32A440;
+    padding: 0 0 5px 0;
+    margin: 0 0 15px 0;
+}
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+/*フッター_リンクバナー*/
+
+#foot #foot_link p {
+    font-size: 14px;
+    line-height: 1.5em;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+    }
+
+#foot #foot_link ul li:last-child{
+    margin:0px;
+}
+
+div#foot #foot_link {
+    width: 960px;
+    margin: 10px auto;
+    display: table;
+    }
+
+div#foot #foot_link p {
+    font-size: 14px;
+    line-height: 1.5em;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 10px;
+    }
+
+div#foot #foot_link ul li{
+    float:left;
+    margin-right:18px;
+}
+
+div#foot #foot_link ul li a:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+/* インスタ表示 */
+.insta_box{
+	max-width:690px;
+	margin:10px auto 20px;
+	}
+.insta_logo_tit {	
+	padding-bottom:10px;
+	border-bottom:dotted 1px #E78525;
+}
+.insta_logo_tit img{
+	float:left;
+	margin-right:10px;
+}
+.insta_logo_tit a{
+	display:block;
+	text-decoration:none;
+        font-size: 0.8rem;
+}
+.insta_logo_tit a span{
+	margin-bottom:4px;
+	color:#000;
+	display:block;
+}
+.insta_inner ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+.insta_inner li{
+	width:160px;
+	height:160px;
+	margin:10px auto;
+	 overflow: hidden;
+}
+.insta_inner li img.instagram-image{
+	width:auto;
+	height:160px;
+}
